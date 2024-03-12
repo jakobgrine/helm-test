@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    image: jakob424/somekube:0.3.0
+    build: .
+    env_file: .env
+    environment:
+      MONGODB_CONNECTION_URI: mongodb://db:27017
+    volumes:
+      - ./logs:/app/logs
+    ports:
+      - 3000:3000
+
+  db:
+    image: mongo
+    ports:
+      - 27017:27017

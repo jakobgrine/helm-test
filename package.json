@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.tsx",
+    "build": "tsc",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "change-case": "^5.4.3",
+    "dotenv": "^16.4.5",
+    "hono": "^4.0.8",
+    "mongoose": "^8.2.0",
+    "winston": "^3.11.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "prettier": "^3.2.5",
+    "tsx": "^3.12.2",
+    "typescript": "^5.3.3"
+  }
+}
